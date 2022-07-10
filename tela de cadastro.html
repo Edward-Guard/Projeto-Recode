@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medarda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg nav">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white-50" href="#">Medarda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white-50" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white-50" aria-current="page" href="Promoções.html">Promoções</a>
+                  </li>
+                  
+                </ul>
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                  <li>
+                    <a class="nav-link active text-white-50" aria-current="page" href="index.html">Log out</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active text-white-50" aria-current="page" href="ajuda.html">Ajuda</a>
+                  </li>
+                  <li>
+                    <a class="nav-link active text-white-50" aria-current="page" href="Contato.html">Contato</a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <article class="container">
+        <h3 class=" row justify-content-center">Viagens</h1>
+        <div class="flex-box"></div>
+        <div class="container col-sm-11">
+        <div class="row row-cols-5 d-flex justify-content-between">
+          <div class="col-6 d-flex col-sm-5">
+            <button class="col-sm-3 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Novo" aria-expanded="false" aria-controls="Novo">Novo</button>
+            <button class="col-sm-3 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Deletar" aria-expanded="false" aria-controls="Novo">Deletar</button>
+            <button class="col-sm-3 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Modificar" aria-expanded="false" aria-controls="Novo">Modificar</button>
+          </div>
+          <div class=" col-6 d-flex col-sm-5 justify-content-end">
+            <input  class=" col-6 col-sm-6" type="text" placeholder="Pesquisar">
+            <button class=" col-4 col-sm-2 btn btn-primary">Reset</button>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center collapse" id="Novo"> <!-- Novo cadastro,div oculta-->
+          <input class="col-2 col-xl-1"  type="text" placeholder="Cod">
+          <select class="col-3 col-xl-2">
+              <option selected>Origem</option>
+              <option value="1">Demacia</option>
+              <option value="2">Noxus</option>
+              <option value="3">Piltover</option>
+              <option value="4">Shurima</option>
+              <option value="5">Zaun</option>
+          </select>
+          <select class="col-3 col-xl-2">
+              <option selected>Destino</option>
+              <option value="1">Demacia</option>
+              <option value="2">Noxus</option>
+              <option value="3">Piltover</option>
+              <option value="4">Shurima</option>
+              <option value="5">Zaun</option>
+          </select>
+          <select class="col-4 col-xl-2">
+              <option selected>Passageiros</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </select>
+          <button class="col-3 col-xl-1">Cadastrar</button>
+        </div>
+        <div class="row justify-content-center collapse" id="Deletar"> <!-- Deletar,div oculta-->
+          <input class="col-1 col-sm-1"  type="text" placeholder="Id">
+          <input class="col-2 col-sm-1"  type="text" placeholder="Cod">
+          <button class="col-3 col-sm-1">Deletar</button>
+        </div>
+        <div class="row justify-content-center collapse" id="Modificar"> <!--Modificar-->
+          <input class="col-2 col-sm-1"  type="text" placeholder="Id">
+          <select class="col-4 col-sm-1">
+              <option selected>Informação</option>
+              <option value="1">CP</option>
+              <option value="2">Origem</option>
+              <option value="3">Destino</option>
+              <option value="4">Passageiros</option>
+          </select>
+          <select class="col-3 col-sm-1">
+              <option selected>Opção</option>
+          </select>    
+          <button class="col-2 col-sm-1">Alterar</button>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">CP</th>
+              <th scope="col">Origem</th>
+              <th scope="col">Destino</th>
+              <th scope="col">Passageiros</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>2456</td>
+              <td>Demacia</td>
+              <td>Ionia</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>4785</td>
+              <td>Piltover</td>
+              <td>Noxus</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>2485</td>
+              <td>Shurima</td>
+              <td>Noxus</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>2456</td>
+              <td>Ionia</td>
+              <td>Demacia</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article class="container">
+        <h3 class=" row justify-content-center">Clientes</h1>
+        <div class="flex-box"></div>
+        <div class="container col-sm-11">
+        <div class="row row-cols-5 d-flex justify-content-between">
+          <div class="col-6 d-flex col-sm-5">
+            <button class="col-sm-3 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#NovoCliente" aria-expanded="false" aria-controls="Novo-Cliente">Novo</button>
+            <button class="col-sm-3 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#DeletarCliente" aria-expanded="false" aria-controls="Deletar-Cliente">Deletar</button>
+            <button class="col-sm-3 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ModificarCliente" aria-expanded="false" aria-controls="Modificar-Cliente">Modificar</button>
+          </div>
+          <div class=" col-6 d-flex col-sm-5 justify-content-end">
+            <input  class=" col-6 col-sm-6" type="text" placeholder="Pesquisar">
+            <button class=" col-4 col-sm-2 btn btn-primary">Reset</button>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center collapse" id="NovoCliente"> <!-- Novo cadastro,div oculta-->
+          <input class="col-2 col-xl-1"  type="text" placeholder="Cod">
+          <select class="col-3 col-xl-2">
+              <option selected>Origem</option>
+              <option value="1">Demacia</option>
+              <option value="2">Noxus</option>
+              <option value="3">Piltover</option>
+              <option value="4">Shurima</option>
+              <option value="5">Zaun</option>
+          </select>
+          <select class="col-3 col-xl-2">
+              <option selected>Destino</option>
+              <option value="1">Demacia</option>
+              <option value="2">Noxus</option>
+              <option value="3">Piltover</option>
+              <option value="4">Shurima</option>
+              <option value="5">Zaun</option>
+          </select>
+          <select class="col-4 col-xl-2">
+              <option selected>Passageiros</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </select>
+          <button class="col-3 col-xl-1">Cadastrar</button>
+        </div>
+        <div class="row justify-content-center collapse" id="DeletarCliente"> <!-- Deletar,div oculta-->
+          <input class="col-1 col-sm-1"  type="text" placeholder="Id">
+          <input class="col-2 col-sm-1"  type="text" placeholder="Cod">
+          <button class="col-3 col-sm-1">Deletar</button>
+        </div>
+        <div class="row justify-content-center collapse" id="ModificarCliente"> <!--Modificar-->
+          <input class="col-2 col-sm-1"  type="text" placeholder="Id">
+          <select class="col-4 col-sm-1">
+              <option selected>Informação</option>
+              <option value="1">CP</option>
+              <option value="2">Origem</option>
+              <option value="3">Destino</option>
+              <option value="4">Passageiros</option>
+          </select>
+          <select class="col-3 col-sm-1">
+              <option selected>Opção</option>
+          </select>    
+          <button class="col-2 col-sm-1">Alterar</button>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">CP</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Data de nascimento</th>
+              <th scope="col">CPF</th>
+              <th scope="col">E-mail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2456</th>
+              <td>Carlos Santos</td>
+              <td>17/05/94</td>
+              <td>663.780.390-11</td>
+              <td>CarlosSantos@gmail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">4785</th>
+              <td>Isabel Garcia</td>
+              <td>25/04/85</td>
+              <td>387.244.440-90</td>
+              <td>IsaGarcia@outlook.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2485</th>
+              <td>Alex Justino</td>
+              <td>05/02/89</td>
+              <td>731.641.570-37</td>
+              <td>AlexJustino@yahoo.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3258</th>
+              <td>Felipe Marques</td>
+              <td>03/11/92</td>
+              <td>722.196.320-75</td>
+              <td>Felipe@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script><!--Script do navbar-->
+</body>
+</html>
