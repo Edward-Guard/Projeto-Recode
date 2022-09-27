@@ -4,9 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './index.css';
 import Nav from './header/Nav';
-import Carousel from './Main/carousel';
 import Promotion from './Main/promotion';
-
 import reportWebVitals from './reportWebVitals';
 
 
@@ -18,7 +16,8 @@ root.render(
   <div className='container'>
     <React.StrictMode>
       <Nav />
-      <Carousel />
+      
+      <Promotion  />
       {/* {<Main /> } */}
     </React.StrictMode>
   </div>
