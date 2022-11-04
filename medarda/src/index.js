@@ -17,7 +17,7 @@ root.render(
     <React.StrictMode>
       <Nav />
       
-      <Promotion  />
+      
       {/* {<Main /> } */}
     </React.StrictMode>
   </div>

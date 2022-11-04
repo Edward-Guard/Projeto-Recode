@@ -11,8 +11,7 @@ import Noxus from '../assets/NoxusRed.jpg'
 import Shurima from '../assets/ShurimaRed.jpg'
 
 const promocao = (
-<div className='container'>
-            
+<div className='container'>          
 <div className='row justify-content-center '>
     <div className='card' style={{ width: '18rem' }}>
         <img src={Portos}alt='sla'/>
@@ -94,6 +93,7 @@ const promocao = (
 </div>
 
 </div>)
+
 const carousel =(
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
